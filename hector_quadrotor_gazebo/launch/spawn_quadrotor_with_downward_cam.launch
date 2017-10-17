@@ -5,9 +5,9 @@
    <arg name="tf_prefix" default="$(optenv ROS_NAMESPACE)"/>
    <arg name="x" default="0.0"/>
    <arg name="y" default="0.0"/>
-   <arg name="z" default="67.1"/>
-   <arg name="R" default="-0.2"/>
-   <arg name="P" default="0.5"/>
+   <arg name="z" default="147.1"/>
+   <arg name="R" default="0.0"/>
+   <arg name="P" default="0.0"/>
    <arg name="Y" default="0.0"/>
 
    <arg name="use_ground_truth_for_tf" default="true"/>
