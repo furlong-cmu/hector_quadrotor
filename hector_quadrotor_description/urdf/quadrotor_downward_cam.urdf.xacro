@@ -15,6 +15,15 @@
     <xacro:generic_camera name="downward_cam" parent="base_link" ros_topic="camera/image" cam_info_topic="camera/camera_info" update_rate="20" res_x="640" res_y="480" image_format="R8G8B8" hfov="100">
       <origin xyz="0.4 0.0 -0.0" rpy="0 ${M_PI/2} 0"/>
     </xacro:generic_camera>
-    
+
+    <xacro:include filename="$(find hector_sensors_description)/urdf/stereo_mast-triggered.xacro" />
+    <xacro:stereo_mast stereo_mast_parent_link="base_link" 
+                       mast_height="0.2"
+                       hfov="70"
+                       img_w="1638"
+                       img_h="1024"
+                       noise_stddev="0.015"
+                       update_rate="1"
+                       off_x="0.5" off_y="-0.15" off_z="0.0" />
 </robot>
   
