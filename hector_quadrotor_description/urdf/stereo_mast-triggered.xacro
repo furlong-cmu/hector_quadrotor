@@ -40,7 +40,7 @@
   <joint name="${Camera01Name}_mast_joint" type="fixed">
     <parent link="${stereo_mast_parent_link}"/>
     <child link="${Camera01Name}_mast_link"/>
-    <origin xyz="${off_x} ${off_y} ${off_z}" rpy="${pi} 0 0" />
+    <origin xyz="${off_x} ${off_y} ${off_z}" rpy="${pi} ${pi/2} 0" />
   </joint>
 
   <link name="${Camera01Name}_head_link">

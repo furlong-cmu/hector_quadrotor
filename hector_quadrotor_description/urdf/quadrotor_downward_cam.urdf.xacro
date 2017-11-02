@@ -24,6 +24,6 @@
                        img_h="1024"
                        noise_stddev="0.015"
                        update_rate="1"
-                       off_x="0.5" off_y="-0.15" off_z="0.0" />
+                       off_x="0.15" off_y="0.0" off_z="-0.10" />
 </robot>
   
