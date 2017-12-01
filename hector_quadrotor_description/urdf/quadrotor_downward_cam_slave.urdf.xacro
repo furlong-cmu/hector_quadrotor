@@ -5,10 +5,10 @@
     <xacro:property name="M_PI" value="3.1415926535897931" />
     
     <!-- Included URDF Files -->
-    <xacro:include filename="$(find hector_quadrotor_description)/urdf/quadrotor_base.urdf.xacro" />
+    <xacro:include filename="$(find hector_quadrotor_description)/urdf/quadrotor_base_slave.urdf.xacro" />
     
-    <!-- Instantiate quadrotor_base_macro once (has no parameters atm) -->
-    <xacro:quadrotor_base_macro />
+    <!-- Instantiate quadrotor_base_slave_macro once (has no parameters atm) -->
+    <xacro:quadrotor_base_slave_macro />
     
     <!-- Downward facing camera -->
     <xacro:include filename="$(find hector_sensors_description)/urdf/generic_camera.urdf.xacro" />

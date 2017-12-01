@@ -2,7 +2,7 @@
 
 <launch>
   <arg name="name" default="quadrotor"/>
-  <arg name="model" default="$(find hector_quadrotor_description)/urdf/quadrotor.gazebo_slave.xacro"/>
+  <arg name="model" default="$(find hector_quadrotor_description)/urdf/quadrotor_slave.gazebo.xacro"/>
   <arg name="controllers" default="
     controller/position
     controller/velocity
@@ -36,7 +36,7 @@
 
   <!-- push robot_description to factory and spawn robot in gazebo -->
   <node name="spawn_robot_slave" pkg="gazebo_ros" type="spawn_model"
-        args="-param robot_description
+        args="-param robot_description_slave
            -urdf
            -x $(arg x)
            -y $(arg y)
