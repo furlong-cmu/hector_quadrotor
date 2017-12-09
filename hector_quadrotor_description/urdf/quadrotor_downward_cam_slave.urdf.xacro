@@ -6,13 +6,15 @@
     
     <!-- Included URDF Files -->
     <xacro:include filename="$(find hector_quadrotor_description)/urdf/quadrotor_base_slave.urdf.xacro" />
+    <xacro:include filename="$(find hector_quadrotor_description)/urdf/disable_quad_slave.urdf.xacro" />
     
     <!-- Instantiate quadrotor_base_slave_macro once (has no parameters atm) -->
     <xacro:quadrotor_base_slave_macro />
+    <xacro:disable_quad_slave_macro />
     
     <!-- Downward facing camera -->
     <xacro:include filename="$(find hector_sensors_description)/urdf/generic_camera.urdf.xacro" />
-    <xacro:generic_camera name="downward_cam" parent="base_link" ros_topic="camera/image" cam_info_topic="camera/camera_info" update_rate="20" res_x="640" res_y="480" image_format="R8G8B8" hfov="100">
+    <xacro:generic_camera name="downward_cam_slave_01" parent="base_link" ros_topic="camera/image_slave_01" cam_info_topic="camera/camera_info_slave_01" update_rate="20" res_x="640" res_y="480" image_format="R8G8B8" hfov="100">
       <origin xyz="0.4 0.0 -0.0" rpy="0 ${M_PI/2} 0"/>
     </xacro:generic_camera>
 
