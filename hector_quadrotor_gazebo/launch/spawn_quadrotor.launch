@@ -12,7 +12,7 @@
 
   <arg name="x" default="0.0"/>
   <arg name="y" default="0.0"/>
-  <arg name="z" default="64.3"/>
+  <arg name="z" default="90."/>
 
   <arg name="use_ground_truth_for_tf" default="true" />
   <arg name="use_ground_truth_for_control" default="true" />
@@ -81,7 +81,10 @@
            -urdf
            -x $(arg x)
            -y $(arg y)
-           -z $(arg z)
+					 -z $(arg z)
+					 -R 0.
+					 -P 0. 
+					 -Y 0.
            -model $(arg name)"
         respawn="false" output="screen"/>
 
