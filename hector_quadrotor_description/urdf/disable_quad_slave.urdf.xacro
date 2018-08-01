@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Main quadrotor link -->
+  <xacro:macro name="disable_quad_slave_macro">
+    <gazebo>
+      <static>false</static>
+    </gazebo>
+  </xacro:macro>
+</robot>
