@@ -15,7 +15,7 @@ position:
         d: 0.0
 velocity:
     type: hector_quadrotor_controllers/VelocityController
-    max_xy: 10.0 # m/s
+    max_xy: 1.0 # m/s
     x: &vel_xy # velocity error in m/s -> acceleration in m/s^2
         p: 2.0
         i: 1.0
@@ -25,7 +25,7 @@ velocity:
         publish_state: true
     y: *vel_xy
     z: # velocity error in m/s -> acceleration in m/s^2
-        max: 5.0 # m/s
+        max: 1.0 # m/s
         p: 5.0
         i: 1.0
         d: 0.0
@@ -34,7 +34,7 @@ velocity:
         publish_state: true
 attitude:
     type: hector_quadrotor_controllers/AttitudeController
-    max_roll_pitch: 0.785398163 # radians
+    max_roll_pitch: 0.26179938779 # ~15deg # 0.785398163 # radians
     roll: &rollpitch # angle error in radians => angular acceleration in radians/s^2
         p: 100.0
         i: 0.0

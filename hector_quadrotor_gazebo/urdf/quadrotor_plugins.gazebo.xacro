@@ -10,13 +10,12 @@
   <xacro:include filename="$(find hector_quadrotor_gazebo)/urdf/quadrotor_propulsion.gazebo.xacro" />
   <xacro:include filename="$(find hector_quadrotor_gazebo)/urdf/quadrotor_aerodynamics.gazebo.xacro" />
 
-	<!-- Quadrotor Gazebo Plugins -->
-	<xacro:macro name="quadrotor_plugins">
+  <!-- Quadrotor Gazebo Plugins -->
   <xacro:quadrotor_sensors />
   <xacro:quadrotor_controller />
   <xacro:quadrotor_propulsion />
-	<xacro:quadrotor_aerodynamics />
-</xacro:macro>
+  <xacro:quadrotor_aerodynamics />
+  <xacro:macro name="quadrotor_plugins"></xacro:macro>
 
 
 </robot>
